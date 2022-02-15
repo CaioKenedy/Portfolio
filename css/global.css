@@ -24,7 +24,7 @@ img {
 
 @media (max-width: 800px) {
   .experiencia .subtitulo {
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     max-width: initial;
   }
@@ -32,8 +32,20 @@ img {
 
 @media (max-width: 800px) {
   .formacao .subtitulo {
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     max-width: initial !important;
+  }
+}
+
+@media (max-width: 799px) {
+  .experiencia .experiencia-texto {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 799px) {
+  .formacao .formacao-texto {
+    font-size: 1rem;
   }
 }

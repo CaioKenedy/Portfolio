@@ -18,12 +18,25 @@
   color: #cccccc;
 }
 
+@media (max-width: 500px) {
+  .footer-texto {
+    font-size: 1rem;
+    max-width: 30ch;
+  }
+}
+
 .footer-contato li {
   font-weight: bold;
   font-size: 1.2rem;
   line-height: 1.1;
   color: #fff;
   margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+  .footer-contato li {
+    font-size: 0.8rem;
+  }
 }
 
 .footer-contato a {
