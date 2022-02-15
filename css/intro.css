@@ -1,0 +1,115 @@
+.intro {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.intro h1 {
+  font-size: 4.5rem;
+  line-height: 1.25;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.intro h1::before {
+  content: "";
+  display: block;
+  width: 3.438rem;
+  height: 3.438rem;
+  background: url(../img/detalhes/detalhe-titulo.svg) no-repeat;
+  position: absolute;
+  left: -1.2rem;
+  top: 0.7rem;
+  z-index: -1;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+.projeto_link {
+  color: #a1e412;
+}
+
+@media (max-width: 1000px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+  .intro p {
+    font-size: 1rem;
+  }
+  .intro h1::before {
+    content: "";
+    display: block;
+    width: 3.438rem;
+    height: 3.438rem;
+    background: url(../img/detalhes/detalhe-titulo.svg) no-repeat;
+    position: absolute;
+    top: -0.1rem;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .intro h1::before {
+    content: "";
+    display: block;
+    width: 0.938rem;
+    height: 0.938rem;
+    background: url(../img/detalhes/detalhe-titulo-menorzinho.svg) no-repeat;
+    position: absolute;
+    left: -0.2rem;
+    top: 0.5rem;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 465px) {
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .intro h1 {
+    font-size: 1.6rem;
+  }
+  .intro p {
+    font-size: 0.8rem;
+  }
+  .intro h1::before {
+    width: 0.938rem;
+    height: 0.938rem;
+    top: -0.1rem;
+    left: -0.1rem;
+  }
+}
+
+@media (max-width: 434px) {
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .intro h1 {
+    font-size: 1.4rem;
+  }
+  .intro p {
+    font-size: 0.7rem;
+  }
+  .intro h1::before {
+    width: 0.938rem;
+    height: 0.938rem;
+    top: -0.1rem;
+    left: -0.1rem;
+  }
+}

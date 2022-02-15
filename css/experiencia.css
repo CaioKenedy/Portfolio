@@ -1,0 +1,137 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+.experiencia .subtitulo {
+  color: #c7fac4;
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+.experiencia-texto strong {
+  color: #141414;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background: #e8faeb;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.empresa:hover {
+  border-top: solid 2px #a1e412;
+}
+
+.empresa::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#caffbd, #40a800);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.ano_trabalho {
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  color: #525252;
+  font-size: 0.875rem;
+}
+
+.nome_empresa {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa_atividade {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.4;
+}
+
+.empresa_skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.empresa_skills li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.4s ease-out;
+}
+
+.empresa_skills li:hover {
+  color: #102702;
+  background: #a1e412;
+  transition: 0.2 ease-out;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+  .ano_trabalho {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+
+@media (max-width: 438px) {
+  .nome_empresa {
+    font-size: 0.8rem;
+  }
+  .empresa_atividade {
+    font-size: 0.7rem;
+  }
+  .ano_trabalho {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
