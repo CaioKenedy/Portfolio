@@ -8,4 +8,4 @@
 
 Details :
 - Responsive
-- Semantic (screen reader friendly)
+- Tested with screen readers
